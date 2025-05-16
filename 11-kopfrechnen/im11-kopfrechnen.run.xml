@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>im02-stellenwertsysteme-vorbereitungsaufgaben.bcf</file>
+      <file>im11-kopfrechnen.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>im02-stellenwertsysteme-vorbereitungsaufgaben.bbl</file>
+      <file>im11-kopfrechnen.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -68,19 +68,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>im02-stellenwertsysteme-vorbereitungsaufgaben</infile>
+      <infile>im11-kopfrechnen</infile>
     </cmdline>
     <input>
-      <file>im02-stellenwertsysteme-vorbereitungsaufgaben.bcf</file>
+      <file>im11-kopfrechnen.bcf</file>
     </input>
     <output>
-      <file>im02-stellenwertsysteme-vorbereitungsaufgaben.bbl</file>
+      <file>im11-kopfrechnen.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>im02-stellenwertsysteme-vorbereitungsaufgaben.bbl</file>
+      <file>im11-kopfrechnen.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>im02-stellenwertsysteme-vorbereitungsaufgaben.bcf</file>
+      <file>im11-kopfrechnen.bcf</file>
     </requires>
     <requires type="editable">
       <file>../literature.bib</file>
