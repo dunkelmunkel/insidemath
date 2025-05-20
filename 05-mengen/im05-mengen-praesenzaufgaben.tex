@@ -1,4 +1,4 @@
-\documentclass{../cssheet}
+\documentclass{cssheet}
 %--------------------------------------------------------------------------------------------------------------
 % Basic meta data
 %--------------------------------------------------------------------------------------------------------------
@@ -26,7 +26,28 @@
 \textbf{Aufgabe 1 (Lieber direkt als um die Ecke):}  Findet Mengen $A$, $B$, $C$ und $D$ so, dass das folgende Mengen-Diagramm stimmt.
 
 \begin{center}
-\includegraphics[width=10cm]{venn.png}
+\begin{tikzpicture}
+	    \definecolor{myblue}{rgb}{0.6,0.8,1.0}
+	\definecolor{myyellow}{rgb}{1.0,1.0,0.6}
+	\definecolor{myorange}{rgb}{1.0,0.8,0.6}
+	\definecolor{mygreen}{rgb}{0.8,1.0,0.8}
+	
+	% A (blau)
+	\filldraw[thick, gray, fill=myblue, fill opacity=0.5] (-3,0) ellipse (3cm and 2cm);
+	\node at (-5.7,1.4) {\textbf{A}};
+	
+	% B (gelb)
+	\draw[thick, gray, fill=myyellow, fill opacity=0.5] (1.4,0.2) ellipse (3.5cm and 2cm);
+	\node at (5.2,0.8) {\textbf{B}};
+	
+	% C (orange)
+	\filldraw[thick, gray, fill=myorange, fill opacity=0.5] (0,-2) ellipse (4cm and 2.5cm);
+	\node at (4,-3.2) {\textbf{C}};
+	
+	% D (grün)
+	\draw[thick, gray, fill=mygreen, fill opacity=0.5] (-2.1,0.2) ellipse (1.3cm and .9cm);
+	\node at (-2.4,1.4) {\textbf{D}};
+\end{tikzpicture}
 \end{center}
 
 
