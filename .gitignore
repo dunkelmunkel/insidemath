@@ -5,3 +5,4 @@
 **/*.xml
 **/*.gz
 **/*.out
+.DS_Store
