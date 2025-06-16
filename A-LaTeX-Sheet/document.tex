@@ -1,0 +1,81 @@
+\documentclass[11pt, a4paper]{article}
+
+\title{\LaTeX-Symbole}
+\author{Marvin Ködding}
+
+\usepackage[default]{raleway}
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{amsmath, amssymb}
+
+\begin{document}
+	\begin{center}
+		{\Huge \LaTeX-Symbole\\\large Ein Überblick für Inside Math!}
+	\end{center}
+	
+	\section{Griechische und hebräische Buchstaben}
+	
+	\begin{tabular}{llllllllllll}
+		$\alpha$ & \verb|\alpha| & $\kappa$ & \verb|\kappa| & $\psi$ & \verb|\psi| & $F$ & \verb|\digamma| & $\Delta$ & \verb|\Delta| & $\Theta$ & \verb|\Theta| \\
+		$\beta$ & \verb|\beta| & $\lambda$ & \verb|\lambda| & $\rho$ & \verb|\rho| & $\varepsilon$ & \verb|\varepsilon| & $\Gamma$ & \verb|\Gamma| & $\Upsilon$ & \verb|\Upsilon| \\
+		$\chi$ & \verb|\chi| & $\mu$ & \verb|\mu| & $\sigma$ & \verb|\sigma| & $\varkappa$ & \verb|\varkappa| & $\Lambda$ & \verb|\Lambda| & $\Xi$ & \verb|\Xi| \\
+		$\delta$ & \verb|\delta| & $\nu$ & \verb|\nu| & $\tau$ & \verb|\tau| & $\varphi$ & \verb|\varphi| & $\Omega$ & \verb|\Omega| & & \\
+		$\epsilon$ & \verb|\epsilon| & $o$ & \verb|o| & $\theta$ & \verb|\theta| & $\varpi$ & \verb|\varpi| & $\Phi$ & \verb|\Phi| & $\aleph$ & \verb|\aleph| \\
+		$\eta$ & \verb|\eta| & $\omega$ & \verb|\omega| & $v$ & \verb|\upsilon| & $\varrho$ & \verb|\varrho| & $\Pi$ & \verb|\Pi| & $\beth$ & \verb|\beth| \\
+		$\gamma$ & \verb|\gamma| & $\phi$ & \verb|\phi| & $\xi$ & \verb|\xi| & $\varsigma$ & \verb|\varsigma| & $\Psi$ & \verb|\Psi| & $\daleth$ & \verb|\daleth| \\
+		$\iota$ & \verb|\iota| & $\pi$ & \verb|\pi| & $\zeta$ & \verb|\zeta| & $\vartheta$ & \verb|\vartheta| & $\Sigma$ & \verb|\Sigma| & $\gimel$ & \verb|\gimel| \\
+	\end{tabular}
+	
+	\section{Mathematische Konstrukte}
+	
+	\begin{center}
+		\begin{tabular}{llllllll}
+			$\frac{abc}{xyz}$ & \verb|\frac{abc}{xyz}| & $\overline{abc}$ & \verb|\overline{abc}| & $\tilde{x}$ & \verb|\tilde{x}| & $a^{10}$ & \verb*|a^{10}|\\
+			$\sqrt{a}$ & \verb|\sqrt{a}| & $\underline{abc}$ & \verb|\underline{abc}| & $\hat{x}$ & \verb|\hat{x}|& $a_{10}$ & \verb*|a_{10}|
+		\end{tabular}
+		
+		\begin{tabular}{llll}
+			$\underbrace{abc}_{xyz}$ & \verb|\underbrace{abc}_{xyz}| & $\overbrace{abc}^{xyz}$ & \verb|\overbrace{abc}^{xyz}|
+		\end{tabular}
+	\end{center}
+	
+	\section{Symbole und Klammern}
+	
+	\begin{center}
+		\begin{tabular}{llllllllllllll}
+			$|$ & \verb+|+ & $\{$ & \verb*|\{| & $/$ & \verb*|/| & $\lfloor$ & \verb|\lfloor| & $\lceil$ & \verb|\lceil| & $\langle$ & \verb*|\langle| & $[$ & \verb*|[|\\
+			$\vert$ & \verb|\vert| & $\}$ & \verb*|\}| & $\backslash$ & \verb|\backslash| & $\rfloor$ & \verb*|\rfloor| & $\rceil$ & \verb*|\rceil| & $\rangle$ & \verb*|\rangle| & $]$ & \verb*|]|
+		\end{tabular}
+	\end{center}
+	Mit zwei verbundenen Begrenzungszeichen kann man deren Höhe dynamisch verknüpfen:\\ \(\displaystyle(\frac{a}{b})\) \verb*|(\frac{a}{b})| vs. $\displaystyle\left(\frac{a}{b}\right)$ \verb*|\left(\frac{a}{b}\right)|
+	
+	\section{Symbole}
+	
+	\begin{center}
+		\begin{tabular}{llllllll||ll}
+			$\ast$      & \verb|\ast|      & $\star$    & \verb|\star|    & $\cdot$     & \verb|\cdot|     & $\circ$      & \verb|\circ|      & $\leftarrow$      & \verb|\leftarrow|      \\
+			$\bullet$   & \verb|\bullet|   & $\times$   & \verb|\times|   & $\div$      & \verb|\div|      & $\pm$        & \verb|\pm|        & $\rightarrow$     & \verb|\rightarrow|     \\
+			$\mp$       & \verb|\mp|       & $\Box$     & \verb|\Box|     & $\cap$      & \verb|\cap|      & $\cup$       & \verb|\cup|       & $\Leftarrow$     & \verb|\Leftarrow|     \\
+			$\wedge$    & \verb|\wedge|    & $\vee$    & \verb|\vee|    & $\neq$      & \verb|\neq|      & $\not=$      & \verb|\not=|      & $\Rightarrow$    & \verb|\Rightarrow|    \\
+			$\sim$      & \verb|\sim|      & $\simeq$   & \verb|\simeq|   & $\approx$   & \verb|\approx|   & $\leq$       & \verb|\leq|       & $\longleftarrow$ & \verb|\longleftarrow| \\
+			$\geq$      & \verb|\geq|      & $\subset$  & \verb|\subset|  & $\supset$   & \verb|\supset|   & $\supseteq$  & \verb|\supseteq|  & $\longrightarrow$& \verb|\longrightarrow|\\
+			$\in$       & \verb|\in|       & $\ni$      & \verb|\ni|      & $\not$      & \verb|\not|      & $\neg$       & \verb|\neg|       & $\mapsto$        & \verb|\mapsto|        \\
+		\end{tabular}
+	\end{center}
+	
+	\section{Schriftarten}
+	
+	Caligraphic letters: \verb*|\mathcal{A}| etc.: $\mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+	
+	\smallskip\noindent
+	Mathbb letters: \verb*|\mathbb{A}| etc.: $\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+	
+	\smallskip\noindent
+	Mathfrak letters: \verb*|\mathfrak{A}| etc.: $\mathfrak{A B C D E F G H J KLMNOPQRSTUVWXYZ}$
+	
+	\smallskip\noindent
+	Math Sans serif letters: \verb*|\mathsf{A}| etc.: $\mathsf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+	
+	\smallskip\noindent
+	Math bold letters: \verb*|\mathbf{A}| etc.: $\mathbf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+	
+\end{document}
